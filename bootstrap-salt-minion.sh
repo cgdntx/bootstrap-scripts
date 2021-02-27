@@ -18,6 +18,6 @@ echo 'startup_states: highstate' >> /etc/salt/minion.d/bootstrap.conf
 echo 'minion_id_caching: False' >> /etc/salt/minion.d/bootstrap.conf
 echo 'minion_id_lowercase: True' >> /etc/salt/minion.d/bootstrap.conf
 
-rm -F /etc/salt/minion_id
+rm -f /etc/salt/minion_id
 
 systemctl start salt-minion
