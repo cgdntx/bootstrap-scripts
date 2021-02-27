@@ -7,6 +7,8 @@ apt-get install -y gnupg2
 wget -O - https://repo.saltstack.com/py3/ubuntu/20.04/amd64/latest/SALTSTACK-GPG-KEY.pub | apt-key add -
 echo 'deb http://repo.saltstack.com/py3/ubuntu/20.04/amd64/latest focal main' >> /etc/apt/sources.list.d/saltstack.list
 
+apt-get update
+
 apt-get install -y salt-minion
 
 systemctl enable salt-minion
